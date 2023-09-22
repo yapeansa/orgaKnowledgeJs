@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
-import Time from './componentes/Time';
+import Area from './componentes/Area';
 
 function App() {
 
-  const times = [
+  const areasDeConhecimento = [
     {
       nome: 'Álgebra',
       corPrimaria: '#57C278',
@@ -43,8 +43,14 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario aPessoaCadastrada={pessoa => aNovaPessoaAdicionada(pessoa)} />
-      {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria} />)}
+      <Formulario areasDeConhecimento={areasDeConhecimento.map(area => area.nome)} aPessoaCadastrada={pessoa => aNovaPessoaAdicionada(pessoa)} />
+      {areasDeConhecimento.map(area => <Area
+        key={area.nome}
+        nome={area.nome}
+        corPrimaria={area.corPrimaria}
+        corSecundaria={area.corSecundaria}
+        conhecedoras={pessoas.filter(pessoa => pessoa.area === area.nome)}
+      />)}
     </div>
   );
 }

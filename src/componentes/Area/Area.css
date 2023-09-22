@@ -3,6 +3,12 @@
     padding: 32px;
 }
 
+.time .conhecedoras {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .time h3 {
     font-size: 32px;
     border-bottom: 4px solid;

@@ -6,18 +6,10 @@ import './Formulario.css'
 
 const Formulario = (props) => {
 
-    const times = [
-        'Álgebra',
-        'Análise',
-        'Geometria',
-        'Sistemas Dinâmicos',
-        'Estatística'
-    ];
-
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
     const [imagem, setImagem] = useState('');
-    const [time, setTime] = useState('');
+    const [area, setArea] = useState('');
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
@@ -25,14 +17,14 @@ const Formulario = (props) => {
             nome,
             cargo,
             imagem,
-            time
+            area
         });
     };
 
     return (
         <section className='formulario'>
             <form onSubmit={aoSalvar}>
-                <h2>Preencha os dados para criar o card do colaborador</h2>
+                <h2>Preencha os dados para criar o card de uma mulher do conhecimento</h2>
                 <CampoTexto
                     obrigatorio={true}
                     label="Nome"
@@ -42,7 +34,7 @@ const Formulario = (props) => {
                 />
                 <CampoTexto
                     obrigatorio={true}
-                    label="Cargo"
+                    label="Especialidade"
                     placeholder="Digite o seu cargo"
                     value={cargo}
                     aoAlterar={valor => setCargo(valor)}
@@ -55,10 +47,10 @@ const Formulario = (props) => {
                 />
                 <ListaSuspensa
                     obrigatorio={true}
-                    itens={times}
-                    label="Time"
-                    value={time}
-                    aoAlterar={valor => setTime(valor)}
+                    itens={props.areasDeConhecimento}
+                    label="Área de Conhecimento"
+                    value={area}
+                    aoAlterar={valor => setArea(valor)}
                 />
                 <Botao>
                     Criar card
