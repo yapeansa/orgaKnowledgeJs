@@ -19,6 +19,10 @@ const Formulario = (props) => {
             imagem,
             area
         });
+        setNome('');
+        setCargo('');
+        setImagem('');
+        setArea('');
     };
 
     return (
@@ -29,27 +33,27 @@ const Formulario = (props) => {
                     obrigatorio={true}
                     label="Nome"
                     placeholder="Digite o seu nome"
-                    value={nome}
+                    valor={nome}
                     aoAlterar={valor => setNome(valor)}
                 />
                 <CampoTexto
                     obrigatorio={true}
                     label="Especialidade"
                     placeholder="Digite o seu cargo"
-                    value={cargo}
+                    valor={cargo}
                     aoAlterar={valor => setCargo(valor)}
                 />
                 <CampoTexto
                     label="Imagem"
                     placeholder="Informe o endereço da imagem"
-                    value={imagem}
+                    valor={imagem}
                     aoAlterar={valor => setImagem(valor)}
                 />
                 <ListaSuspensa
                     obrigatorio={true}
                     itens={props.areasDeConhecimento}
                     label="Área de Conhecimento"
-                    value={area}
+                    valor={area}
                     aoAlterar={valor => setArea(valor)}
                 />
                 <Botao>

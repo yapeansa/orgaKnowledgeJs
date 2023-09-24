@@ -1,0 +1,22 @@
+.footer {
+    height: 243px;
+    background: url('../../../public/imagens/fundo.svg') top center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .redes-sociais {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 0 40px;
+}
+
+.footer p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+}
