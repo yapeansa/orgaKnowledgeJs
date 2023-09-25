@@ -8,6 +8,7 @@ const Area = (props) => {
             <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
             <div className="conhecedoras">
                 {props.conhecedoras.map(conhecedora => <Conhecedora
+                    key={conhecedora.nome}
                     nome={conhecedora.nome}
                     cargo={conhecedora.cargo}
                     imagem={conhecedora.imagem}

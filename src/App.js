@@ -37,7 +37,6 @@ function App() {
   const [pessoas, setPessoas] = useState([]);
 
   const aNovaPessoaAdicionada = (pessoa) => {
-    console.log(pessoa);
     setPessoas([...pessoas, pessoa]);
   };
 

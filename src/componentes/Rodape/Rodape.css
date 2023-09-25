@@ -1,7 +1,6 @@
 .footer {
     height: 243px;
-    background: url('../../../public/imagens/fundo.svg') top center;
-    background-size: cover;
+    background: url('../../../public/imagens/fundo.svg') top center / cover no-repeat;
     display: flex;
     justify-content: space-around;
     align-items: center;
