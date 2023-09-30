@@ -28,24 +28,24 @@ const Formulario = (props) => {
     return (
         <section className='formulario'>
             <form onSubmit={aoSalvar}>
-                <h2>Preencha os dados para criar o card de uma mulher do conhecimento</h2>
+                <h2>Preencha os dados para criar o card de uma pessoa incrível:</h2>
                 <CampoTexto
                     obrigatorio={true}
                     label="Nome"
-                    placeholder="Digite o seu nome"
+                    placeholder="Digite o nome da pessoa"
                     valor={nome}
                     aoAlterar={valor => setNome(valor)}
                 />
                 <CampoTexto
                     obrigatorio={true}
                     label="Especialidade"
-                    placeholder="Digite o seu cargo"
+                    placeholder="Digite a especialidade"
                     valor={cargo}
                     aoAlterar={valor => setCargo(valor)}
                 />
                 <CampoTexto
                     label="Imagem"
-                    placeholder="Informe o endereço da imagem"
+                    placeholder="Informe o endereço da imagem do perfil"
                     valor={imagem}
                     aoAlterar={valor => setImagem(valor)}
                 />

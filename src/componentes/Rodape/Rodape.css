@@ -2,6 +2,7 @@
     background: url('../../../public/imagens/rodape.jpg') center / cover fixed no-repeat;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     padding: 100px 0;
 }
@@ -21,6 +22,7 @@
 
 .footer p {
     color: #FFF;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
+    font-family: 'montserrat';
 }

@@ -11,6 +11,7 @@
     position: relative;
     display: inline;
     padding: 20px 0;
+    font-family: 'prata';
 }
 
 .organizacao h2::before {
@@ -26,5 +27,6 @@
 
 .organizacao p {
     margin: 60px 0 25px;
-    font-size: 20px;
+    font-size: 26px;
+    font-family: 'montserrat';
 }

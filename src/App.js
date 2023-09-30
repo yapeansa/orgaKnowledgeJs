@@ -4,6 +4,7 @@ import Formulario from './componentes/Formulario';
 import Informacoes from './componentes/Informacoes';
 import Area from './componentes/Area';
 import Rodape from './componentes/Rodape';
+import './App.css';
 
 function App() {
 
