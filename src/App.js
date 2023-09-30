@@ -44,7 +44,10 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario areasDeConhecimento={areasDeConhecimento.map(area => area.nome)} aPessoaCadastrada={pessoa => aNovaPessoaAdicionada(pessoa)} />
+      <Formulario
+        areasDeConhecimento={areasDeConhecimento.map(area => area.nome)}
+        aPessoaCadastrada={pessoa => aNovaPessoaAdicionada(pessoa)}
+      />
       <Informacoes />
       {areasDeConhecimento.map(area => <Area
         key={area.nome}
