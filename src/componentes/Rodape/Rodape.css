@@ -1,6 +1,6 @@
 .footer {
     height: 243px;
-    background: url('../../../public/imagens/fundo.svg') top center / cover no-repeat;
+    background: url('../../../public/imagens/rodape.jpg') center / cover fixed no-repeat;
     display: flex;
     justify-content: space-around;
     align-items: center;
