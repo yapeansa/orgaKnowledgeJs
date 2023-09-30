@@ -1,13 +1,30 @@
 import './Rodape.css';
 
 const Rodape = () => {
+
+    const redesSociais = [
+        {
+            endereco: 'https://facebook.com/orgaknowledge',
+            imagem: 'imagens/facebook.svg',
+            texto: 'Organo Facebook'
+        },
+        {
+            endereco: 'https://twitter.com/orgaknowledge',
+            imagem: 'imagens/twitter.svg',
+            texto: 'Organo twitter'
+        },
+        {
+            endereco: 'https://instagram.com/orgaknowledge',
+            imagem: 'imagens/instagram.svg',
+            texto: 'Organo instagram'
+        }
+    ];
+
     return (
         <footer className="footer">
             <div>
                 <ul className="redes-sociais">
-                    <li><a href="https://facebook.com"><img src="imagens/facebook.svg" alt="Facebook Organo" /></a></li>
-                    <li><a href="https://twitter.com"><img src="imagens/twitter.svg" alt="Twitter Organo" /></a></li>
-                    <li><a href="https://instagram.com"><img src="imagens/instagram.svg" alt="Instagram Organo" /></a></li>
+                    {redesSociais.map(rede => <li><a href={rede.endereco}><img src={rede.imagem} alt={rede.texto} /></a></li>)}
                 </ul>
             </div>
             <div>
