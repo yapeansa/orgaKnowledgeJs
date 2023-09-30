@@ -8,7 +8,6 @@ const Rodape = () => {
                     <li><a href="https://facebook.com"><img src="imagens/facebook.svg" alt="Facebook Organo" /></a></li>
                     <li><a href="https://twitter.com"><img src="imagens/twitter.svg" alt="Twitter Organo" /></a></li>
                     <li><a href="https://instagram.com"><img src="imagens/instagram.svg" alt="Instagram Organo" /></a></li>
-                    <li><a href="#home">escrever</a></li>
                 </ul>
             </div>
             <div>
