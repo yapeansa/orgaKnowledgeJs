@@ -6,12 +6,17 @@
     padding: 100px 0;
 }
 
-.footer .redes-sociais {
+.redes-sociais {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-content: center;
     gap: 0 40px;
+}
+
+.redes-sociais li a {
+    display: block;
+    color: #fff;
 }
 
 .footer p {
