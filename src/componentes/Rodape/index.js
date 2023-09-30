@@ -24,7 +24,9 @@ const Rodape = () => {
         <footer className="footer">
             <div>
                 <ul className="redes-sociais">
-                    {redesSociais.map(rede => <li><a href={rede.endereco}><img src={rede.imagem} alt={rede.texto} /></a></li>)}
+                    {redesSociais.map(rede => <li key="rede.texto">
+                        <a href={rede.endereco}><img src={rede.imagem} alt={rede.texto} /></a>
+                    </li>)}
                 </ul>
             </div>
             <div>
