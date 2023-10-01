@@ -22,19 +22,19 @@ const Rodape = () => {
 
     return (
         <footer className="footer">
-            <div>
+            <section>
                 <ul className="redes-sociais">
                     {redesSociais.map(rede => <li key="rede.texto">
                         <a href={rede.endereco}><img src={rede.imagem} alt={rede.texto} /></a>
                     </li>)}
                 </ul>
-            </div>
-            <div>
+            </section>
+            <section>
                 <img src="imagens/Logo.svg" alt="Logo Organo" />
-            </div>
-            <div>
+            </section>
+            <section>
                 <p>Desenvolvido por Yago.</p>
-            </div>
+            </section>
         </footer>
     );
 };
