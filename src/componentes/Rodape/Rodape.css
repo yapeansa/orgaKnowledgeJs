@@ -1,10 +1,10 @@
 .footer {
     background: url('../../../public/imagens/rodape.jpg') center / cover fixed no-repeat;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 100px 0;
+    padding: 100px 120px;
 }
 
 .footer ul {
