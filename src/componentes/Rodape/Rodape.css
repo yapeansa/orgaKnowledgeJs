@@ -9,14 +9,10 @@
 
 .redes-sociais {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    gap: 0 40px;
 }
 
 .redes-sociais li a {
-    display: block;
+    display: inline;
     color: #fff;
 }
 
