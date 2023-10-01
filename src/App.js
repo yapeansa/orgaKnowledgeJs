@@ -43,7 +43,7 @@ function App() {
 
   const [exibir, setExibir] = useState(true);
 
-  function toggleForm () {
+  const toggleForm = () => {
     let controle = exibir;
     setExibir(!controle);
   }
