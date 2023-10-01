@@ -35,7 +35,34 @@ function App() {
     }
   ];
 
-  const [pessoas, setPessoas] = useState([]);
+  const inicial = [
+    {
+      nome: 'Maria Gaetana Agnesi',
+      cargo: 'Matemática Italiana',
+      imagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Maria_Gaetana_Agnesi.jpg/200px-Maria_Gaetana_Agnesi.jpg',
+      area: areasDeConhecimento[1].nome
+    },
+    {
+      nome: 'Marie-Sophie Germain',
+      cargo: 'Matemática Francesa',
+      imagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Germain.jpeg/200px-Germain.jpeg',
+      area: areasDeConhecimento[1].nome
+    },
+    {
+      nome: 'Irène Joliot-Curie',
+      cargo: 'Física Francesa',
+      imagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Joliot-curie.jpg/200px-Joliot-curie.jpg',
+      area: areasDeConhecimento[1].nome
+    },
+    {
+      nome: 'Simone de Beauvoir',
+      cargo: 'Filósofa Francesa',
+      imagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Simone_de_Beauvoir2.png/220px-Simone_de_Beauvoir2.png',
+      area: areasDeConhecimento[3].nome
+    }
+  ];
+
+  const [pessoas, setPessoas] = useState(inicial);
 
   const aNovaPessoaAdicionada = (pessoa) => {
     setPessoas([...pessoas, pessoa]);
