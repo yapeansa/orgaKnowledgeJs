@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
-import Informacoes from './componentes/Informacoes';
 import Area from './componentes/Area';
 import Rodape from './componentes/Rodape';
 import './App.css';
@@ -42,14 +41,27 @@ function App() {
     setPessoas([...pessoas, pessoa]);
   };
 
+  const [exibir, setExibir] = useState(true);
+
+  function toggleForm () {
+    let controle = exibir;
+    setExibir(!controle);
+  }
+
   return (
     <div className="App">
       <Banner />
-      <Formulario
+      {exibir && <Formulario
         areasDeConhecimento={areasDeConhecimento.map(area => area.nome)}
         aPessoaCadastrada={pessoa => aNovaPessoaAdicionada(pessoa)}
-      />
-      <Informacoes />
+      />}
+      <section className="organizacao">
+        <h2>Minha Organização:</h2>
+        <p>Um texto descritivo...</p>
+        <button onClick={toggleForm}>
+          <img src="imagens/toggle.svg" alt="toggleForm" />
+        </button>
+      </section>
       {areasDeConhecimento.map(area => <Area
         key={area.nome}
         nome={area.nome}
