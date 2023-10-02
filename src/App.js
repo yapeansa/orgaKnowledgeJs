@@ -59,6 +59,12 @@ function App() {
       cargo: 'Filósofa Francesa',
       imagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Simone_de_Beauvoir2.png/220px-Simone_de_Beauvoir2.png',
       area: areasDeConhecimento[3].nome
+    },
+    {
+      nome: 'Hipátia',
+      cargo: 'Filósofa Grega',
+      imagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hypatia_portrait.png/200px-Hypatia_portrait.png',
+      area: areasDeConhecimento[3].nome
     }
   ];
 
@@ -78,10 +84,12 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      {exibir && <Formulario
-        areasDeConhecimento={areasDeConhecimento.map(area => area.nome)}
-        aPessoaCadastrada={pessoa => aNovaPessoaAdicionada(pessoa)}
-      />}
+      {exibir ?
+        <Formulario
+          areasDeConhecimento={areasDeConhecimento.map(area => area.nome)}
+          aPessoaCadastrada={pessoa => aNovaPessoaAdicionada(pessoa)}
+        /> : ''
+      }
       <section className="organizacao">
         <h2>Minha Organização:</h2>
         <p>Um texto descritivo...</p>
