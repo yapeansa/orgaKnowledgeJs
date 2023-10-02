@@ -85,7 +85,6 @@ function App() {
       <section className="organizacao">
         <h2>Minha Organização:</h2>
         <p>Um texto descritivo...</p>
-        <p>Parágrafo</p>
         <button onClick={toggleForm}>
           <img src="imagens/toggle.svg" alt="toggleForm" />
         </button>
