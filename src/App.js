@@ -95,7 +95,7 @@ function App() {
     const [pessoas, setPessoas] = useState([]);
 
     useEffect(() => {
-        fetch("https://github.com/yapeansa/orgaKnowledgeJs/blob/master/src/assets/db.json/pessoas")
+        fetch("https://raw.githubusercontent.com/yapeansa/orgaKnowledgeJs/master/src/assets/db.json")
             .then(resposta => resposta.json())
             .then(dados => setPessoas(dados))
     }, [])
